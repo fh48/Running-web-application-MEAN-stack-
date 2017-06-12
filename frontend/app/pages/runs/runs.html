@@ -1,0 +1,117 @@
+<div class="page-container container">
+    <div class="row run-header">
+        <div class="col-xs-12 col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-body icon-panel">
+                    <div>
+                        <button class="btn btn-primary run-select-button" ng-click="onSelectRun(run)">Select</button>
+                        <p ng-hide="selectedRun">
+                            <span>No Data</span>
+                        </p>
+                        <p ng-show="selectedRun">
+                            {{selectedRun.startDateTime | date:'fullDate'}}
+                            <br> {{selectedRun.startDateTime | date: 'shortTime'}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6 col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-body icon-panel">
+                    <div ng-hide="weather">
+                        <span>No Data</span>
+                    </div>
+                    <div ng-show="weather">
+                        <skycon class="weather-panel-icon" icon="weather.icon" size="38"></skycon>
+                        <p class="header-panel-text">
+                            <label class="header-panel-label">Temperature:</label> <span>{{weather.temperature | number : 0}}˚C</span>
+                            <br><label class="header-panel-label">Humidity:</label> <span>{{weather.humidity | number : 0}} %</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-3 col-md-2">
+            <button type="button" uib-popover-template="'app/components/publish-popover.html'" popover-title="{{publishPopover.title}}" ng-disabled="!selectedRun || selectedRun.route" popover-placement="left" class='btn btn-default run-interaction-button'>
+                <span class="glyphicon glyphicon-share" aria-hidden="true"></span>
+            </button>
+        </div>
+        <div class="col-xs-3 col-md-2">
+            <hf-upload-gpx-button on-converted="onCreateRun(geoJson)" class="btn btn-default run-interaction-button">
+                <span class="glyphicon glyphicon-upload" aria-hidden="true"></span>
+            </hf-upload-gpx-button>
+        </div>
+    </div>
+    <div ng-hide="selectedRun" class="row">
+        <div class="col-xs-12">
+            <div class="no-data-available-panel">
+                <hf-upload-gpx-button on-converted="onCreateRun(geoJson)" class="btn btn-default run-interaction-button">
+                    <span class="glyphicon glyphicon-upload" aria-hidden="true"></span>
+                    <p>To upload a GPX file click the upload button.</p>
+                </hf-upload-gpx-button>
+            </div>
+        </div>
+    </div>
+    <div ng-show="runs.length > 0" class="row">
+        <div class="col-xs-12">
+            <hf-map class="map-container" geo-json="selectedRun.geo"></hf-map>
+        </div>
+    </div>
+    <div ng-show="selectedRun" class="row">
+        <div class="col-xs-12">
+            <div class="row">
+                <div class="col-xs-3 col-md-2">
+                    <div class="run-metric">
+                        <span class="glyphicon glyphicon-road" aria-hidden="true"></span>
+                    </div>
+                    <div class="header-panel-text">
+                        {{selectedRun.distance | number : 2 }} km
+                        <br><label>Distance</label>
+                    </div>
+                </div>
+                <div class="col-xs-3 col-md-2">
+                    <div class="run-metric">
+                        <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+                    </div>
+                    <div class="header-panel-text">
+                        {{ getDuration(selectedRun) | date: "HH'h' mm'm' ss's'" }}
+                        <br><label>Duration</label>
+                    </div>
+                </div>
+                <div class="col-xs-3 col-md-2">
+                    <div class="run-metric">
+                        <span class="glyphicon glyphicon-forward" aria-hidden="true"></span>
+                    </div>
+                    <div class="header-panel-text">
+                        {{ getPace(selectedRun) }} min/km
+                        <br><label>Pace</label>
+                    </div>
+                </div>
+                <div class="col-xs-3 col-md-2">
+                    <div class="run-metric">
+                        <span class="glyphicon glyphicon-fire" aria-hidden="true"></span>
+                    </div>
+                    <div class="header-panel-text">
+                        {{ getKcal(selectedRun) | number : 0 }} Kcal
+                        <br><label>Calories</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div ng-show="selectedRun" class="row run-graph-container">
+        <div class="col-xs-12 col-md-6 run-graph">
+            <h2>Elevation Graph</h2>
+            <div>
+                <canvas height="250" id="elevationGraph" class="chart chart-line" chart-data="elevationData" chart-options="elevationOptions" chart-colors="elevationColors"></canvas>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-6 run-graph">
+            <h2>Pace Graph</h2>
+            <div>
+                <canvas height="250" id="paceGraph" class="chart chart-line" chart-data="paceData" chart-options="paceOptions" chart-colors="paceColors"></canvas>
+            </div>
+        </div>
+    </div>
+</div>

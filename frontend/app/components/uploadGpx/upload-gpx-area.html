@@ -1,0 +1,12 @@
+<div>
+    <div ngf-drop="onConvertGpx($file)" class="drop-box" ngf-drag-over-class="'dragover'" ngf-multiple="false">
+        <div class="drop-box-overlay">
+            <div class="drop-box-overlay-icon">
+                <span class="glyphicon glyphicon-upload" aria-hidden="true"></span>
+                <p>Upload Gpx file</p>
+            </div>
+        </div>
+        <ng-transclude></ng-transclude>
+    </div>
+    <div ngf-no-file-drop>File Drag/Drop is not supported for this browser</div>
+</div>

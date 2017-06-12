@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<gpx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="1.1" creator="JustGoRide.co.uk - http://www.JustGoRide.co.uk" xmlns="http://www.topografix.com/GPX/1/1">
+  <metadata>
+    <name>Bearsden Ski-Club</name>
+    <desc />
+    <copyright author="">
+      <year>2017</year>
+    </copyright>
+    <bounds minlat="55.90267784" minlon="-4.34378" maxlat="55.93188" maxlon="-4.31155" />
+  </metadata>
+  <trk>
+    <name>Bearsden Ski-Club</name>
+    <trkseg>
+      <trkpt lat="55.90267784" lon="-4.31545436">
+        <ele>34.9532241821289</ele>
+        <time>2017-05-25T14:49:36Z</time>
+      </trkpt>
+      <trkpt lat="55.90325" lon="-4.31247">
+        <ele>38.03369140625</ele>
+        <time>2017-05-25T14:50:32Z</time>
+      </trkpt>
+      <trkpt lat="55.90392" lon="-4.31155">
+        <ele>40.8346748352051</ele>
+        <time>2017-05-25T14:50:58Z</time>
+      </trkpt>
+      <trkpt lat="55.90766" lon="-4.31536">
+        <ele>34.6985092163086</ele>
+        <time>2017-05-25T14:52:50Z</time>
+      </trkpt>
+      <trkpt lat="55.90998" lon="-4.32232">
+        <ele>39.5700492858887</ele>
+        <time>2017-05-25T14:54:46Z</time>
+      </trkpt>
+      <trkpt lat="55.91072" lon="-4.32291">
+        <ele>39.2716369628906</ele>
+        <time>2017-05-25T14:55:06Z</time>
+      </trkpt>
+      <trkpt lat="55.9153" lon="-4.32119">
+        <ele>44.7374649047852</ele>
+        <time>2017-05-25T14:57:05Z</time>
+      </trkpt>
+      <trkpt lat="55.91754" lon="-4.32201">
+        <ele>47.3677787780762</ele>
+        <time>2017-05-25T14:58:03Z</time>
+      </trkpt>
+      <trkpt lat="55.91847" lon="-4.3219">
+        <ele>50.0694351196289</ele>
+        <time>2017-05-25T14:58:26Z</time>
+      </trkpt>
+      <trkpt lat="55.92024" lon="-4.32077">
+        <ele>45.600341796875</ele>
+        <time>2017-05-25T14:59:16Z</time>
+      </trkpt>
+      <trkpt lat="55.92162" lon="-4.31899">
+        <ele>47.7278594970703</ele>
+        <time>2017-05-25T14:59:57Z</time>
+      </trkpt>
+      <trkpt lat="55.92303" lon="-4.31832">
+        <ele>45.0542144775391</ele>
+        <time>2017-05-25T15:00:30Z</time>
+      </trkpt>
+      <trkpt lat="55.92586" lon="-4.31523">
+        <ele>46.7694625854492</ele>
+        <time>2017-05-25T15:01:56Z</time>
+      </trkpt>
+      <trkpt lat="55.93188" lon="-4.31639">
+        <ele>44.9887733459473</ele>
+        <time>2017-05-25T15:04:38Z</time>
+      </trkpt>
+      <trkpt lat="55.93164" lon="-4.32945">
+        <ele>67.4321594238281</ele>
+        <time>2017-05-25T15:07:50Z</time>
+      </trkpt>
+      <trkpt lat="55.93156" lon="-4.32992">
+        <ele>67.4531860351563</ele>
+        <time>2017-05-25T15:07:57Z</time>
+      </trkpt>
+      <trkpt lat="55.93016" lon="-4.33033">
+        <ele>65.6993942260742</ele>
+        <time>2017-05-25T15:08:38Z</time>
+      </trkpt>
+      <trkpt lat="55.93051" lon="-4.33726">
+        <ele>69.7651901245117</ele>
+        <time>2017-05-25T15:10:11Z</time>
+      </trkpt>
+      <trkpt lat="55.92939" lon="-4.34164">
+        <ele>87.0186996459961</ele>
+        <time>2017-05-25T15:11:22Z</time>
+      </trkpt>
+      <trkpt lat="55.92663" lon="-4.34378">
+        <ele>80.0284729003906</ele>
+        <time>2017-05-25T15:12:36Z</time>
+      </trkpt>
+      <trkpt lat="55.92487" lon="-4.33889">
+        <ele>75.509033203125</ele>
+        <time>2017-05-25T15:13:57Z</time>
+      </trkpt>
+      <trkpt lat="55.92347" lon="-4.33791">
+        <ele>70.2057189941406</ele>
+        <time>2017-05-25T15:14:32Z</time>
+      </trkpt>
+      <trkpt lat="55.92172" lon="-4.33529">
+        <ele>62.6057434082031</ele>
+        <time>2017-05-25T15:15:27Z</time>
+      </trkpt>
+      <trkpt lat="55.91875" lon="-4.33308">
+        <ele>57.7932548522949</ele>
+        <time>2017-05-25T15:16:46Z</time>
+      </trkpt>
+      <trkpt lat="55.91472" lon="-4.3291">
+        <ele>52.0920791625977</ele>
+        <time>2017-05-25T15:18:40Z</time>
+      </trkpt>
+      <trkpt lat="55.91299" lon="-4.32641">
+        <ele>51.6936187744141</ele>
+        <time>2017-05-25T15:19:37Z</time>
+      </trkpt>
+      <trkpt lat="55.91089" lon="-4.32515">
+        <ele>41.8268852233887</ele>
+        <time>2017-05-25T15:20:31Z</time>
+      </trkpt>
+      <trkpt lat="55.91009" lon="-4.32338">
+        <ele>39.8351287841797</ele>
+        <time>2017-05-25T15:21:03Z</time>
+      </trkpt>
+      <trkpt lat="55.90932" lon="-4.32349">
+        <ele>42.9923133850098</ele>
+        <time>2017-05-25T15:21:25Z</time>
+      </trkpt>
+      <trkpt lat="55.90856" lon="-4.32555">
+        <ele>50.9385223388672</ele>
+        <time>2017-05-25T15:22:02Z</time>
+      </trkpt>
+      <trkpt lat="55.90794" lon="-4.32589">
+        <ele>50.901424407959</ele>
+        <time>2017-05-25T15:22:18Z</time>
+      </trkpt>
+      <trkpt lat="55.90374" lon="-4.32334">
+        <ele>47.6442680358887</ele>
+        <time>2017-05-25T15:24:10Z</time>
+      </trkpt>
+      <trkpt lat="55.90382" lon="-4.32297">
+        <ele>46.8850860595703</ele>
+        <time>2017-05-25T15:24:15Z</time>
+      </trkpt>
+      <trkpt lat="55.90502" lon="-4.32326">
+        <ele>44.7428321838379</ele>
+        <time>2017-05-25T15:24:47Z</time>
+      </trkpt>
+      <trkpt lat="55.90509" lon="-4.32052">
+        <ele>38.7382049560547</ele>
+        <time>2017-05-25T15:25:25Z</time>
+      </trkpt>
+      <trkpt lat="55.9043" lon="-4.31691">
+        <ele>32.5820236206055</ele>
+        <time>2017-05-25T15:26:17Z</time>
+      </trkpt>
+      <trkpt lat="55.90279" lon="-4.31455">
+        <ele>35.9836387634277</ele>
+        <time>2017-05-25T15:27:06Z</time>
+      </trkpt>
+      <trkpt lat="55.90268" lon="-4.31543">
+        <ele>35.006275177002</ele>
+        <time>2017-05-25T15:27:18Z</time>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

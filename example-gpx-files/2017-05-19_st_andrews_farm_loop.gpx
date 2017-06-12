@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<gpx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="1.1" creator="JustGoRide.co.uk - http://www.JustGoRide.co.uk" xmlns="http://www.topografix.com/GPX/1/1">
+  <metadata>
+    <name>St Andrews Farm Loop</name>
+    <desc />
+    <copyright author="">
+      <year>2017</year>
+    </copyright>
+    <bounds minlat="56.31606" minlon="-2.81665" maxlat="56.3338" maxlon="-2.77971268" />
+  </metadata>
+  <trk>
+    <name>St Andrews Farm Loop</name>
+    <trkseg>
+      <trkpt lat="56.33230165" lon="-2.77971268">
+        <ele>11.4886102676392</ele>
+        <time>2017-05-19T15:37:26Z</time>
+      </trkpt>
+      <trkpt lat="56.33291" lon="-2.78108">
+        <ele>10.0019912719727</ele>
+        <time>2017-05-19T15:37:56Z</time>
+      </trkpt>
+      <trkpt lat="56.3338" lon="-2.78177">
+        <ele>7.48190069198608</ele>
+        <time>2017-05-19T15:38:20Z</time>
+      </trkpt>
+      <trkpt lat="56.33358" lon="-2.78338">
+        <ele>12.424334526062</ele>
+        <time>2017-05-19T15:38:44Z</time>
+      </trkpt>
+      <trkpt lat="56.33172" lon="-2.78333">
+        <ele>22.458158493042</ele>
+        <time>2017-05-19T15:39:29Z</time>
+      </trkpt>
+      <trkpt lat="56.33021" lon="-2.78386">
+        <ele>27.5571632385254</ele>
+        <time>2017-05-19T15:40:06Z</time>
+      </trkpt>
+      <trkpt lat="56.32873" lon="-2.78311">
+        <ele>38.9398765563965</ele>
+        <time>2017-05-19T15:40:42Z</time>
+      </trkpt>
+      <trkpt lat="56.32749" lon="-2.78172">
+        <ele>45.4419059753418</ele>
+        <time>2017-05-19T15:41:18Z</time>
+      </trkpt>
+      <trkpt lat="56.32567" lon="-2.78164">
+        <ele>48.9884872436523</ele>
+        <time>2017-05-19T15:42:05Z</time>
+      </trkpt>
+      <trkpt lat="56.32158" lon="-2.78016">
+        <ele>63.0162773132324</ele>
+        <time>2017-05-19T15:43:50Z</time>
+      </trkpt>
+      <trkpt lat="56.31712" lon="-2.77985">
+        <ele>92.1610717773438</ele>
+        <time>2017-05-19T15:45:30Z</time>
+      </trkpt>
+      <trkpt lat="56.31606" lon="-2.78841">
+        <ele>91.7931518554688</ele>
+        <time>2017-05-19T15:47:20Z</time>
+      </trkpt>
+      <trkpt lat="56.3177" lon="-2.79516">
+        <ele>100.039817810059</ele>
+        <time>2017-05-19T15:48:54Z</time>
+      </trkpt>
+      <trkpt lat="56.31703" lon="-2.80239">
+        <ele>89.5459365844727</ele>
+        <time>2017-05-19T15:50:30Z</time>
+      </trkpt>
+      <trkpt lat="56.31933" lon="-2.81665">
+        <ele>68.167350769043</ele>
+        <time>2017-05-19T15:53:38Z</time>
+      </trkpt>
+      <trkpt lat="56.32526" lon="-2.81155">
+        <ele>62.5787239074707</ele>
+        <time>2017-05-19T15:55:58Z</time>
+      </trkpt>
+      <trkpt lat="56.32622" lon="-2.81021">
+        <ele>55.974910736084</ele>
+        <time>2017-05-19T15:56:26Z</time>
+      </trkpt>
+      <trkpt lat="56.32714" lon="-2.80701">
+        <ele>42.2912979125977</ele>
+        <time>2017-05-19T15:57:10Z</time>
+      </trkpt>
+      <trkpt lat="56.33319" lon="-2.80314">
+        <ele>23.1574611663818</ele>
+        <time>2017-05-19T15:59:35Z</time>
+      </trkpt>
+      <trkpt lat="56.33358" lon="-2.78358">
+        <ele>12.7156057357788</ele>
+        <time>2017-05-19T16:03:35Z</time>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

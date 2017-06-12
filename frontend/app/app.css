@@ -1,0 +1,545 @@
+/*************************** Login/Register ***************************/
+
+html {
+    width: 100%;
+}
+
+body {
+    background-color: #f8f8f8;
+    width: 100%;
+}
+
+ng-map {
+    width: 100%;
+}
+
+.app-wrapper {
+    padding-top: 50px;
+}
+
+.auth-header {
+    color: #fff;
+    text-align: center;
+}
+
+.auth-header h1 {
+    font-size: 80px;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+.auth-panel {
+    background-color: #fff;
+    padding: 15px;
+}
+
+.auth-panel {
+    margin-top: 100px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    -webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+input.ng-invalid.ng-touched {
+    border-color: red;
+    outline-color: red;
+}
+
+.messages {
+    font-size: smaller;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    color: red;
+}
+
+.btn-circle {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    top: initial;
+}
+
+.list-empty-item {
+    text-align: center;
+    line-height: 80px;
+}
+
+
+/*************************** Profile ***************************/
+
+.upload-image {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.upload-image-label {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0);
+    text-align: center;
+    font-size: 45px;
+    line-height: 200px;
+}
+
+.upload-image:hover .upload-image-label {
+    background: #eaeaea;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.upload-image-label>span {
+    visibility: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+.upload-image:hover .upload-image-label>span {
+    visibility: visible;
+}
+
+.hidden-input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+
+/*************************** Navbar ***************************/
+
+.logo {
+    height: 50px;
+    padding: 10px;
+}
+
+
+/*.navbar-nav {
+    text-align: center;
+}*/
+
+.navbar-nav>li>a.profile-container {
+    padding: 5px;
+}
+
+.profile-image {
+    padding: 5px;
+    margin: auto;
+    height: 40px;
+    vertical-align: middle;
+}
+
+.profile-image>div {
+    width: 30px;
+    height: 30px;
+    float: left;
+}
+
+.profile-image>span {
+    padding: 5px;
+    vertical-align: middle;
+    line-height: 30px;
+}
+
+
+/*************************** Landingpage ***************************/
+
+.landing-container {
+    font-size: 12px;
+    padding-top: 15px;
+}
+
+.landing-container h2 {
+    color: #337ab7;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.landing-container h3 {
+    font-size: 14px;
+}
+
+.panel-left {
+    padding: 5px 5px 5px 5px;
+}
+
+.panel-left .friendbox {
+    margin: 10px 0px 10px 0px;
+    padding: 1px 35px 5px 35px;
+}
+
+.panel-left .weatherbox {
+    margin: 10px 0px 10px 0px;
+    padding: 1px 35px 5px 35px;
+}
+
+.panel-left .goalbox {
+    margin: 10px 0px 10px 0px;
+    padding: 5px 35px 5px 35px;
+}
+
+.panel-left .btn-goal {
+    margin: 10px 0px 10px 0px;
+    padding: 5px 35px 5px 35px;
+}
+
+.panel-left .uploadbox {
+    text-align: center;
+    background-color: #888;
+    margin: 10px 0px 10px 0px;
+    padding: 5px 35px 5px 35px;
+}
+
+.panel-mid {
+    padding: 5px 5px 5px 5px;
+}
+
+.panel-mid .uploadbox h2 {
+    font-weight: bold;
+    color: #FFF;
+}
+
+.panel-mid .graphbox {
+    margin: 10px 0px 10px 0px;
+    padding: 5px 35px 5px 35px;
+}
+
+.panel-mid #distancepie {
+    width: 20px;
+    height: 20px;
+}
+
+.panel-right {
+    padding: 5px 5px 5px 5px;
+}
+
+.panel-right .achievementbox {
+    margin: 10px 0px 10px 0px;
+    padding: 5px 35px 5px 35px;
+}
+
+.panel-right .progress {
+    background-color: grey;
+}
+
+.panel-right .friendsbox {
+    margin: 10px 0px 10px 0px;
+    padding: 5px 35px 5px 35px;
+}
+
+.myrun-btn {
+    margin-top: 60px;
+}
+
+.graphs {
+    background-color: #bbb;
+    opacity: 60;
+}
+
+.piehealdline {
+    font-size: 12px;
+}
+
+.piechart {
+    width: 150px;
+    height: 150px;
+}
+
+.pie-cart {
+    float: left;
+}
+
+.pietable {
+    width: 30%;
+    float: left;
+}
+
+.barhealdline {
+    font-size: 12px;
+}
+
+.barchart {
+    margin-top: 100px;
+    width: 500px;
+    height: 500px;
+}
+
+.list-item-friend-image {
+    height: 40px;
+    width: 40px;
+    float: left;
+    margin-right: 15px;
+}
+
+.landing-friend-list-item {
+    line-height: 40px;
+}
+
+.runtable {
+    background-color: #bbb;
+    width: 300px;
+}
+
+#mainbar {
+    background-color: #fff;
+}
+
+
+/*************************** Runs ***************************/
+
+.run-panel {
+    height: 68px;
+    position: relative;
+}
+
+.run-panel p {
+    margin-left: 68px;
+}
+
+.run-weather-icon {
+    float: left;
+}
+
+.run-select-button {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    width: 68px;
+}
+
+.run-publish-button {
+    width: 100%;
+    height: 70px;
+    font-size: 30px;
+    color: #337ab7;
+}
+
+.run-interaction-button {
+    width: 100%;
+    height: 70px;
+    font-size: 30px;
+    line-height: 70px;
+    color: #337ab7;
+}
+
+.run-metric {
+    margin-left: 15px;
+    float: left;
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    padding-right: 15px;
+}
+
+.run-select-button-distance {
+    position: absolute;
+    right: 15px;
+    top: 0;
+    line-height: 70px;
+}
+
+.page-container>.row {
+    padding: 15px 0px;
+}
+
+.page-container {
+    background: #fff;
+}
+
+.run-graph h2 {
+    color: #337ab7;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#runMap {
+    height: 400px;
+}
+
+.drop-box {
+    position: relative;
+    z-index: 1000;
+}
+
+.drop-box-overlay {
+    position: absolute;
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(55, 143, 218, 0.25);
+    z-index: 900;
+}
+
+.drop-box.dragover .drop-box-overlay {
+    display: block;
+}
+
+.drop-box-overlay-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -75px;
+    margin-left: -75px;
+    text-align: center;
+    vertical-align: middle;
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 50%;
+    color: #337ab7;
+}
+
+.drop-box-overlay-icon>.glyphicon {
+    margin-top: 40px;
+    font-size: 40px;
+}
+
+.drop-box-overlay-icon>p {
+    font-weight: bold;
+}
+
+
+/************************ Achievements ***************************/
+
+.achievements-panel {
+    background-color: white;
+    text-align: center;
+}
+
+.achievements-panel img {
+    height: 160px;
+}
+
+.achievement-user-heading {
+    padding-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    color: #337ab7;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.distanceProgressContainer {
+    margin: 40px 0;
+}
+
+.distanceProgress {
+    height: 160px;
+    padding-top: 70px;
+}
+
+.progress {
+    background-color: #D7D7D7;
+}
+
+.indivAchievement {
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+    background: yellow;
+    left: 100px;
+    filter: grayscale(100%);
+}
+
+.indivAchievement p {
+    text-align: center;
+}
+
+.distance-achievements {
+    border: 5px solid black;
+}
+
+.steps-achievements {
+    border: 5px solid black;
+}
+
+.achieved {
+    background-color: red;
+    'filter': 'none', '-webkit-filter': 'none';
+}
+
+.friends-list-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #337ab7;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.friends-achievements-list img {
+    top: 200px;
+}
+
+.friend-entry {
+    height: 80px;
+}
+
+.pagination {
+    display: block;
+}
+
+
+/************************ Routes ***************************/
+
+.header-panel-text {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.text-information-icon {
+    padding-right: 5px;
+}
+
+.list-item-user-image {
+    height: 40px;
+    width: 40px;
+    float: left;
+    margin-right: 15px;
+}
+
+.modal-select-item:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.modal-select-item>p {
+    margin: 10px 0;
+}
+
+.modal-select-item>p:nth-child(1) {
+    float: left;
+}
+
+.modal-select-item>p:nth-child(2) {
+    float: right;
+    text-align: right;
+}
+
+@media screen and (max-width: 991px) {
+    .challenges-list {
+        padding-top: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header-panel-label {
+        display: none;
+    }
+}

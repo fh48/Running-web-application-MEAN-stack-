@@ -1,0 +1,40 @@
+/************************ Routes ***************************/
+
+.header-panel-text {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.text-information-icon {
+    padding-right: 5px;
+}
+
+.modal-select-item:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.modal-select-item>p {
+    margin: 10px 0;
+}
+
+.modal-select-item>p:nth-child(1) {
+    float: left;
+}
+
+.modal-select-item>p:nth-child(2) {
+    float: right;
+    text-align: right;
+}
+
+.challengers-user-column{
+    line-height: 40px;
+}
+
+@media screen and (max-width: 767px) {
+    .header-panel-label {
+        display: none;
+    }
+}

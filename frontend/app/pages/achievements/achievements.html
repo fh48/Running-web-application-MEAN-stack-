@@ -1,0 +1,89 @@
+<div class="page-container container">
+    <div class="row">
+        <uib-tabset class="col-md-9">
+            <uib-tab index="0" heading="Ongoing Achievements">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2>You have run {{totalDist}}km ...</h2>
+                    </div>
+                    <div class="row achievement-progress-container">
+                        <div class="medal-container col-xs-3 col-md-3">
+                            <img ng-src="app/images/gold_medal.png" class="medal current-medal" alt="Current Distance Achievement" />
+                            <div class="medal-text">{{reachedDistance}}km</div>
+                        </div>
+                        <div class="achievement-progress col-xs-6 col-md-6">
+                            <div class="progress">
+                                <uib-progressbar class="progress-striped active" value="sum" aria-valuemax="{{toNextDistance}}" style="width:{{(totalDist - reachedDistance)/toNextDistance*100}}%"></uib-progressbar>
+                            </div>
+                        </div>
+                        <div class="medal-container col-xs-3 col-md-3">
+                            <img ng-src="app/images/gold_medal.png" class="medal" alt="Next Distance Achievement" />
+                            <div class="medal-text">{{reachedDistance + toNextDistance}}km</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2>... climbed {{totalSteps}} steps ...</h2>
+                    </div>
+                    <div class="row achievement-progress-container">
+                        <div class="medal-container col-xs-3 col-md-3">
+                            <img ng-src="app/images/gold_medal.png" class="medal current-medal" alt="Current Steps Achievement" />
+                            <div class="medal-text"><img src="app/images/steps.png" class="steps-icon" /></br>{{reachedSteps}}</div>
+                        </div>
+                        <div class="achievement-progress col-xs-6 col-md-6">
+                            <div class="progress">
+                                <uib-progressbar class="progress-striped active" value="steps" aria-valuemax="{{toNextSteps}}" style="width:{{(totalSteps - reachedSteps)/toNextSteps*100}}%"></uib-progressbar>
+                            </div>
+                        </div>
+                        <div class="medal-container col-xs-3 col-md-3">
+                            <img ng-src="app/images/gold_medal.png" class="medal" alt="Next Steps Achievement" />
+                            <div class="medal-text"><img src="app/images/steps.png" class="steps-icon" /></br>{{reachedSteps + toNextSteps}}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2>... and burned {{totalKcal}} Kilocalories ({{equivKcal}} Big Macs, {{blueWhaleKcal}} blue whales)</h2>
+                    </div>
+                    <div class="row achievement-progress-container">
+                        <div class="medal-container col-xs-3 col-md-3">
+                            <img ng-src="app/images/gold_medal.png" class="medal current-medal" alt="Current Calorie Achievement" />
+                            <div class="medal-text"><img src="app/images/burger.png" class="burger-icon" /></br>{{reachedKcal}}</div>
+                        </div>
+                        <div class="achievement-progress col-xs-6 col-md-6">
+                            <div class="progress">
+                                <uib-progressbar class="progress-striped active" value="kcal" aria-valuemax="{{toNextKcal}}" style="width:{{(equivKcal - reachedKcal)/toNextKcal*100}}%"></uib-progressbar>
+                            </div>
+                        </div>
+                        <div class="medal-container col-xs-3 col-md-3">
+                            <img ng-src="app/images/gold_medal.png" class="medal" alt="Next Calorie Achievement" />
+                            <div class="medal-text"><img src="app/images/burger.png" class="burger-icon" /></br>{{reachedKcal + toNextKcal}}</div>
+                        </div>
+                    </div>
+                </div>
+            </uib-tab>
+            <uib-tab index="1" heading="Special Achievements">
+                <div class="special-achievement" ng-repeat="achievement in specialAchievements" ng-mouseover="positive()" ng-mouseleave="negative()" title="{{achievement.description}}">
+                    <img ng-src="app/images/challenges/{{achievement.imageName}}" class="{{isUnlocked[achievement.name]}}" alt="{{achievement.name}}" />
+                    <h3>{{achievement.name}}</h3>
+                </div>
+            </uib-tab>
+        </uib-tabset>
+        <div class="friends-list col-xs-12 col-md-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading">Friends' Achievements</div>
+                <div class="list-group">
+                    <a href class="list-group-item friend-list-item" ng-click="onSelectUser(user._id)">
+                        <div class="img-circle list-item-friend-image" user-image="user.imageUrl"></div>
+                        {{user.name}}
+                    </a>
+                    <a href ng-repeat="follower in followers" class="list-group-item friend-list-item" ng-click="onSelectUser(follower._id)">
+                        <div class="img-circle list-item-friend-image" user-image="follower.imageUrl"></div>
+                        {{follower.name}}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

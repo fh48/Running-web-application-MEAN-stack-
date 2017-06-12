@@ -1,0 +1,19 @@
+<div class="modal-header">
+    <h3 class="modal-title" id="modal-title">Runs</h3>
+</div>
+<div class="modal-body" id="modal-body">
+    <form name="challengeForm">
+        <div class="form-group">
+            <label for="userName">Corresponding Runs</label>
+            <select class="form-control" name="run" ng-init="selectedRun = runs[0]" ng-model="selectedRun" ng-options="run as run.startDateTime | date:'fullDate' for run in runs"></select>
+        </div>
+        <div ng-show="selectedRun" class="form-group">
+            <label for="duration">Duration</label>
+            <p>{{getDuration(selectedRun.startDateTime, selectedRun.endDateTime) | date: "HH'h' mm'm' ss's'"}}</p>
+        </div>
+    </form>
+</div>
+<div class="modal-footer">
+    <button type="submit" class="btn btn-primary" ng-disabled="!selectedRun" ng-click="confirm(selectedRun)">Confirm</button>
+    <button class="btn btn-danger" type="button" ng-click="cancel()">Cancel</button>
+</div>

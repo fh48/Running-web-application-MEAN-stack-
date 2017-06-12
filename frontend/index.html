@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="hfApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="hfApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="hfApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="hfApp" class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Runciple</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/angularjs-slider/dist/rzslider.css" />
+    <link rel="stylesheet" type="text/css" href="node_modules/angular-ui-notification/dist/angular-ui-notification.css" />
+
+    <link rel="stylesheet" href="app/styles/general.css">
+    <link rel="stylesheet" href="app/styles/login.css">
+    <link rel="stylesheet" href="app/styles/landing.css">
+    <link rel="stylesheet" href="app/styles/runs.css">
+    <link rel="stylesheet" href="app/styles/routes.css">
+    <link rel="stylesheet" href="app/styles/achievements.css">
+
+</head>
+
+<body ng-app="hfApp">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+    <navbar></navbar>
+    <div class="app-wrapper" ng-view></div>
+    <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+
+    <!-- Node Modules -->
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-animate/angular-animate.js"></script>
+    <script src="node_modules/angular-touch/angular-touch.js"></script>
+    <script src="node_modules/angular-route/angular-route.js"></script>
+    <script src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+    <script src="node_modules/angularjs-slider/dist/rzslider.min.js"></script>
+    <script src="node_modules/ngstorage/ngStorage.min.js"></script>
+    <script src="node_modules/chart.js/dist/Chart.min.js"></script>
+    <script src="node_modules/angular-chart.js/dist/angular-chart.min.js"></script>
+    <script src="node_modules/ngmap/build/scripts/ng-map.min.js"></script>
+    <script src="node_modules/angular-messages/angular-messages.min.js"></script>
+    <script src="node_modules/ng-file-upload/dist/ng-file-upload-all.min.js"></script>
+    <script src="node_modules/angular-skycons/angular-skycons.min.js"></script>
+    <script src="node_modules/angular-ui-notification/dist/angular-ui-notification.js"></script>
+
+    <!-- Components -->
+    <script src="app/components/navbar/navbar.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/components/compareTo.js"></script>
+    <script src="app/components/modalProfile/modalProfile.js"></script>
+    <script src="app/components/userImage.js"></script>
+    <script src="app/components/map/map.js"></script>
+    <script src="app/components/uploadGpx/uploadGpxArea.js"></script>
+    <script src="app/components/uploadGpx/uploadGpxButton.js"></script>
+    <script src="app/components/modalChallenge/modalChallenge.js"></script>
+    <script src="app/components/modalRun/modalRun.js"></script>
+    <script src="app/components/modalRoute/modalRoute.js"></script>
+
+    <!-- Pages -->
+    <script src="app/pages/login/login.js"></script>
+    <script src="app/pages/landing/landing.js"></script>
+    <script src="app/pages/runs/runs.js"></script>
+    <script src="app/pages/routes/routes.js"></script>
+    <script src="app/pages/achievements/achievements.js"></script>
+
+    <!-- Services -->
+    <script src="app/services/api.js"></script>
+    <script src="app/services/auth.js"></script>
+    <script src="app/services/geometry.js"></script>
+    <script src="app/services/achieve.js"></script>
+    <script src="app/services/metric.js"></script>
+</body>
+
+</html>

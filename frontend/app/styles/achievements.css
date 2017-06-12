@@ -1,0 +1,108 @@
+/************************ Achievements ***************************/
+
+.achievement-progress-container {
+    margin: 30px 0;
+}
+
+.achievement-progress {
+    height: 160px;
+    padding-top: 70px;
+}
+
+.progress {
+    background-color: #D7D7D7;
+}
+
+.medal-container {
+    height: 160px;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    padding-left: 0;
+}
+
+.medal {
+    position: absolute;
+    width: 100%;
+    max-width: 160px;
+    margin-left: 50%;
+    margin-top: 80px;
+    transform: translate(-50%, -50%);
+}
+
+.current-medal {
+    filter: grayscale(100%);
+}
+
+.medal-text {
+    position: absolute;
+    z-index: 10;
+    font-size: 3vw;
+    font-weight: 800;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.steps-icon {
+    height: 3vw;
+}
+
+.burger-icon {
+    height: 4vw;
+}
+
+@media screen and (min-width: 900px) {
+    .medal-text {
+        font-size: 27px;
+    }
+
+    .steps-icon {
+        height: 27px;
+    }
+
+    .burger-icon {
+        height: 36px;
+    }
+}
+
+.special-achievement {
+    margin: 40px 0 40px 80px;
+    float: left;
+    text-align: center;
+}
+
+.special-achievement>img {
+    height: 160px;
+}
+
+.locked-achievement {
+    filter: contrast(0%);
+}
+
+.special-achievement>h3 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.friends-list-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #337ab7;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.friends-achievements-list img {
+    top: 200px;
+}
+
+.friend-entry {
+    height: 80px;
+}
+
+.pagination {
+    display: block;
+}

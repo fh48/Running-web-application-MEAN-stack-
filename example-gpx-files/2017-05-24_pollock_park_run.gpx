@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<gpx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="1.1" creator="JustGoRide.co.uk - http://www.JustGoRide.co.uk" xmlns="http://www.topografix.com/GPX/1/1">
+  <metadata>
+    <name>Pollock Park Run</name>
+    <desc />
+    <copyright author="">
+      <year>2017</year>
+    </copyright>
+    <bounds minlat="55.82987" minlon="-4.31422" maxlat="55.83517" maxlon="-4.29936" />
+  </metadata>
+  <trk>
+    <name>Pollock Park Run</name>
+    <trkseg>
+      <trkpt lat="55.82989027" lon="-4.30840015">
+        <ele>29.8572940826416</ele>
+        <time>2017-05-24T09:00:05Z</time>
+      </trkpt>
+      <trkpt lat="55.82987" lon="-4.30472">
+        <ele>23.1413402557373</ele>
+        <time>2017-05-24T09:00:45Z</time>
+      </trkpt>
+      <trkpt lat="55.83185" lon="-4.29981">
+        <ele>19.0747737884521</ele>
+        <time>2017-05-24T09:01:55Z</time>
+      </trkpt>
+      <trkpt lat="55.83279" lon="-4.29936">
+        <ele>22.7631359100342</ele>
+        <time>2017-05-24T09:02:16Z</time>
+      </trkpt>
+      <trkpt lat="55.83345" lon="-4.30097">
+        <ele>28.7150611877441</ele>
+        <time>2017-05-24T09:02:42Z</time>
+      </trkpt>
+      <trkpt lat="55.83408" lon="-4.30089">
+        <ele>29.8752822875977</ele>
+        <time>2017-05-24T09:02:56Z</time>
+      </trkpt>
+      <trkpt lat="55.83449" lon="-4.30202">
+        <ele>33.7416305541992</ele>
+        <time>2017-05-24T09:03:13Z</time>
+      </trkpt>
+      <trkpt lat="55.83517" lon="-4.30883">
+        <ele>43.4726982116699</ele>
+        <time>2017-05-24T09:04:43Z</time>
+      </trkpt>
+      <trkpt lat="55.83471" lon="-4.31239">
+        <ele>43.3668556213379</ele>
+        <time>2017-05-24T09:05:29Z</time>
+      </trkpt>
+      <trkpt lat="55.83408" lon="-4.31338">
+        <ele>40.1075782775879</ele>
+        <time>2017-05-24T09:05:47Z</time>
+      </trkpt>
+      <trkpt lat="55.83289" lon="-4.31422">
+        <ele>31.5033206939697</ele>
+        <time>2017-05-24T09:06:14Z</time>
+      </trkpt>
+      <trkpt lat="55.83225" lon="-4.31382">
+        <ele>31.5348815917969</ele>
+        <time>2017-05-24T09:06:29Z</time>
+      </trkpt>
+      <trkpt lat="55.83198" lon="-4.31287">
+        <ele>34.524169921875</ele>
+        <time>2017-05-24T09:06:45Z</time>
+      </trkpt>
+      <trkpt lat="55.83175" lon="-4.30795">
+        <ele>39.7662925720215</ele>
+        <time>2017-05-24T09:07:50Z</time>
+      </trkpt>
+      <trkpt lat="55.83206" lon="-4.30732">
+        <ele>40.9485702514648</ele>
+        <time>2017-05-24T09:08:02Z</time>
+      </trkpt>
+      <trkpt lat="55.83257" lon="-4.30781">
+        <ele>48.1003723144531</ele>
+        <time>2017-05-24T09:08:20Z</time>
+      </trkpt>
+      <trkpt lat="55.833" lon="-4.30469">
+        <ele>34.8770561218262</ele>
+        <time>2017-05-24T09:08:59Z</time>
+      </trkpt>
+      <trkpt lat="55.83368" lon="-4.30486">
+        <ele>38.0097961425781</ele>
+        <time>2017-05-24T09:09:16Z</time>
+      </trkpt>
+      <trkpt lat="55.83343" lon="-4.30299">
+        <ele>32.210018157959</ele>
+        <time>2017-05-24T09:09:40Z</time>
+      </trkpt>
+      <trkpt lat="55.83408" lon="-4.30089">
+        <ele>29.8752822875977</ele>
+        <time>2017-05-24T09:10:10Z</time>
+      </trkpt>
+      <trkpt lat="55.83517" lon="-4.30906">
+        <ele>43.5664710998535</ele>
+        <time>2017-05-24T09:12:05Z</time>
+      </trkpt>
+      <trkpt lat="55.83487" lon="-4.31189">
+        <ele>44.3761978149414</ele>
+        <time>2017-05-24T09:12:43Z</time>
+      </trkpt>
+      <trkpt lat="55.83341" lon="-4.31411">
+        <ele>34.4709625244141</ele>
+        <time>2017-05-24T09:13:24Z</time>
+      </trkpt>
+      <trkpt lat="55.83225" lon="-4.31382">
+        <ele>31.5348815917969</ele>
+        <time>2017-05-24T09:13:49Z</time>
+      </trkpt>
+      <trkpt lat="55.83156" lon="-4.30932">
+        <ele>39.3325271606445</ele>
+        <time>2017-05-24T09:15:03Z</time>
+      </trkpt>
+      <trkpt lat="55.83191" lon="-4.30742">
+        <ele>39.3855590820313</ele>
+        <time>2017-05-24T09:15:28Z</time>
+      </trkpt>
+      <trkpt lat="55.83259" lon="-4.30778">
+        <ele>48.2051773071289</ele>
+        <time>2017-05-24T09:15:48Z</time>
+      </trkpt>
+      <trkpt lat="55.83294" lon="-4.3048">
+        <ele>35.1828918457031</ele>
+        <time>2017-05-24T09:16:26Z</time>
+      </trkpt>
+      <trkpt lat="55.83124" lon="-4.3037">
+        <ele>26</ele>
+        <time>2017-05-24T09:17:02Z</time>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

@@ -1,0 +1,70 @@
+/*************************** Login/Register ***************************/
+
+
+/*ng-map {
+    width: 100%;
+}*/
+
+.login-slogan {
+    text-align: center;
+    margin: 60px 0 60px 0;
+    font-size: 70px;
+    font-weight: 900;
+    color: #ce7b2d;
+}
+
+.login-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('../images/login-cover.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.auth-panel {
+    background-color: #fff;
+    padding: 15px;
+}
+
+.auth-panel .tab-content {
+    margin: 15px;
+}
+
+.auth-panel {
+    padding: 15px;
+    border: 1px solid #ccc;
+    -webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+input.ng-invalid.ng-touched {
+    border-color: red;
+    outline-color: red;
+}
+
+.messages {
+    font-size: smaller;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    color: red;
+}
+
+.btn-circle {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    top: initial;
+}
+
+.list-empty-item {
+    text-align: center;
+    line-height: 80px;
+}

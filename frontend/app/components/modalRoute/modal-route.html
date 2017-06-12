@@ -1,0 +1,18 @@
+<div class="modal-header">
+    <h3 class="modal-title" id="modal-title">Select a route</h3>
+</div>
+<div class="modal-body" id="modal-body">
+    <div class="list-group">
+        <a href ng-repeat="route in routes | orderBy : '-challengers.length' track by $index" class="list-group-item modal-select-item" ng-click="onSelectRoute(route)">
+            <p>
+                <b>{{route.name}}</b>
+                <br><span class="glyphicon glyphicon-user text-information-icon" aria-hidden="true"></span>{{route.user.name}}
+            </p>
+            <p>
+                {{route.creationDate | date:'fullDate'}}
+                <br>{{route.distance | number : 2}} km
+                <br><span class="glyphicon glyphicon-flash text-information-icon" aria-hidden="true"></span>{{route.challengers.length}}
+            </p>
+        </a>
+    </div>
+</div>

@@ -1,0 +1,34 @@
+<nav ng-show="profile.user" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" ng-click="isNavCollapsed = !isNavCollapsed">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            <a href="#"><img class="pull-left logo" src="app/images/logo.png"></a>
+        </div>
+        <div class="collapse navbar-collapse" uib-collapse="isNavCollapsed">
+            <ul class="nav navbar-nav">
+                <li><a ng-class="{ active: isActive('/runs')}" ng-click="onNavigate('/runs')" href>Runs</a></li>
+                <li><a ng-class="{ active: isActive('/routes')}" ng-click="onNavigate('/routes')" href>Routes</a></li>
+                <li><a ng-class="{ active: isActive('/achievements')}" ng-click="onNavigate('/achievements')" href>Achievements</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li uib-dropdown>
+                    <a uib-dropdown-toggle href class="dropdown-toggle profile-container">
+                        <div class="profile-image">
+                            <div class="img-circle" user-image="profile.user.imageUrl"></div>
+                            <span>{{profile.user.name}}<b class="caret"></b></span>
+                        </div>
+                    </a>
+                    <ul class="dropdown-menu" uib-dropdown-menu>
+                        <li><a ng-click="onShowProfile(profile.user)" href>Profile</a></li>
+                        <li><a ng-click="onLogout()" href>Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

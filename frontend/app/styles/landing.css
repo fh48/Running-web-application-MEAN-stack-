@@ -1,0 +1,144 @@
+/*************************** Landingpage ***************************/
+
+.landing-container {
+  font-size: 12px;
+  padding-top: 15px;
+}
+
+ h2 {
+  margin: 2px 2px 2px 2px;
+  color: #337ab7;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+ h3 {
+  margin: 2px 2px 2px 2px;
+  font-size: 14px;
+  color: #337ab7;
+
+  font-weight: bold;
+}
+
+.panel-left {
+  padding: 5px 5px 5px 5px;
+  margin-left: 0px 0px 0px 0px;
+}
+
+.panel-right .friendaddbox {
+  margin: 10px 0px 10px 0px;
+  padding: 5px 35px 5px 35px;
+}
+
+.panel-left .weatherbox {
+  margin: 10px 0px 0px 0px;
+  padding: 5px 35px 5px 35px;
+}
+
+.panel-left .goalbox {
+  margin: 10px 0px 0px 0px;
+  padding: 5px 35px 5px 35px;
+}
+
+.panel-left .btn-goal {
+  margin-top: 10px;
+  padding: 5px 35px 5px 35px;
+}
+
+.panel-left .uploadbox {
+  text-align: center;
+  margin: 10px 0px 10px 0px;
+  padding: 5px 35px 5px 35px;
+}
+
+.panel-mid {
+  padding: 5px 5px 5px 5px;
+}
+
+.panel-mid .graphbox {
+  margin: 10px 0px 0px 0px;
+  padding: 5px 35px 5px 35px;
+}
+
+.panel-mid .nodata{
+  padding: 10px 0px 10px 0px;
+  color: #fff;
+  background-color: #ddd;
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.panel-mid .graphwrapper{
+  font-weight: bolder;
+
+}
+
+.panel-mid #distancepie {
+  width: 20px;
+  height: 20px;
+}
+
+.panel-right {
+  padding: 5px 5px 5px 5px;
+}
+
+.panel-right .achievementbox {
+  margin: 10px 0px 10px 0px;
+  padding: 5px 35px 5px 35px;
+}
+
+.panel-right .progress {
+  background-color: grey;
+}
+
+.panel-right .friendsbox {
+  margin: 10px 0px 10px 0px;
+  padding: 5px 35px 5px 35px;
+}
+
+.myrun-btn {
+  margin-top: 60px;
+}
+
+.graphs {
+  background-color: #bbb;
+  opacity: 60;
+}
+
+.piehealdline {
+  font-size: 12px;
+}
+
+.piechart {
+  width: 150px;
+  height: 150px;
+}
+
+.pie-cart {
+  float: left;
+}
+
+.pietable {
+  width: 30%;
+  float: left;
+}
+
+.barhealdline {
+  font-size: 12px;
+}
+
+.barchart {
+  margin-top: 100px;
+  width: 200px;
+  height: 200px;
+}
+
+.runtable {
+  background-color: #bbb;
+  width: 300px;
+}
+
+#mainbar {
+  background-color: #fff;
+}

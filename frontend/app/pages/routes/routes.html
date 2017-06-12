@@ -1,0 +1,72 @@
+<div class="page-container container">
+    <div class="row run-header">
+        <div class="col-xs-12 col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-body icon-panel">
+                    <button class="btn btn-primary run-select-button" ng-click="onSelectRoute(route)">Select</button>
+                    <p ng-hide="selectedRoute">
+                        <span>No Data</span>
+                    </p>
+                    <p ng-show="selectedRoute">
+                        <b>{{selectedRoute.name}}</b>
+                        <br><span class="glyphicon glyphicon-user text-information-icon" aria-hidden="true"></span>{{selectedRoute.user.name}}
+                        <span class="run-select-button-distance">{{selectedRoute.distance | number : 2}} km</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-2 col-md-offset-6">
+            <button type="button" ng-disabled="correspondingRuns.length <= 0" class="btn btn-default run-interaction-button" ng-click="onChallengeRoute()">
+                <span class="glyphicon glyphicon-flash" aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+    <div ng-hide="selectedRoute" class="row">
+        <div class="col-xs-12">
+            <div class="no-data-available-panel">
+                <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+                <p>No routes available.</p>
+            </div>
+        </div>
+    </div>
+    <div ng-show="selectedRoute" class="row">
+        <div class="col-xs-12">
+            <hf-map class="map-container" geo-json="selectedRoute.geo"></hf-map>
+        </div>
+    </div>
+    <div ng-show="selectedRoute" class="row">
+        <div class="col-xs-12">
+            <div class="panel challenge-heading panel-primary">
+                <div class="panel-heading">
+                    Challengers
+                </div>
+                <div ng-repeat="challenge in challenges | orderBy : '-startDateTime' track by $index" class="list-group-item">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-2 challengers-user-column">
+                            <div class="img-circle list-item-friend-image" user-image="challenge.user.imageUrl"></div>
+                            {{challenge.user.name}}
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="run-metric">
+                                <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+                            </div>
+                            <div class="header-panel-text">
+                                {{ getDuration(challenge.startDateTime, challenge.endDateTime) | date: "HH'h' mm'm'ss's'"}}
+                                <br><label>Duration</label>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="run-metric">
+                                <span class="glyphicon glyphicon-forward" aria-hidden="true"></span>
+                            </div>
+                            <div class="header-panel-text">
+                                {{ getPace(challenge.startDateTime, challenge.endDateTime, selectedRoute.distance) }} min/km
+                                <br><label>Pace</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,137 @@
+<div class="page-container container">
+    <div class="row">
+        <div class="panel-left col-sm-4">
+            <div class="weatherbox">
+                <div ng-show="weather">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h2>{{headings.headingsWeather}}</h2>
+                        </div>
+                        <div class="panel-body icon-panel">
+                            <skycon class="weather-panel-icon" icon="weather.icon" size="38"></skycon>
+                            <p class="header-panel-text">
+                                <label class="header-panel-label">Temperature:</label> <span>{{weather.temperature | number : 0}} &deg;C</span>
+                                <br>
+                                <label class="header-panel-label">Humidity:</label> <span>{{weather.humidity | number : 0}} %</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="goalbox">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2>{{headings.headingGoals}}</h2>
+                        <div ng-show="weeklyGoals">{{timeToUnlock}}</div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="slider">
+                            <h3>{{headings.headingDistanceGoal}}</h3>
+                            <rzslider rz-slider-model="distanceSlider.value" rz-slider-options="distanceSlider.options"></rzslider>
+                            <h3>{{headings.headingSpeedgoal}}</h3>
+                            <rzslider rz-slider-model="speedSlider.value" rz-slider-options="speedSlider.options"></rzslider>
+                            <h3>{{headings.headingStepsGoal}}</h3>
+                            <rzslider rz-slider-model="stepSlider.value" rz-slider-options="stepSlider.options"></rzslider>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-goal center-block" ng-disabled="weeklyGoals" ng-click="setWeeklyGoal()">lock goals</button>
+                    </div>
+                </div>
+            </div>
+            <div class="uploadbox">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2>{{headings.headingUpload}}</h2>
+                    </div>
+                    <hf-upload-gpx-button on-converted="onCreateRun(geoJson)" class="btn btn-default run-interaction-button">
+                        <span class="glyphicon glyphicon-upload" aria-hidden="true"></span>
+                    </hf-upload-gpx-button>
+                </div>
+            </div>
+        </div>
+        <div class="panel-mid  col-sm-4">
+            <div class="graphbox">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2>{{headings.headingDistanceMeasure}}</h2>
+                    </div>
+                    <div class="panel-body">
+                        <div ng-hide="weekDistance" class="nodata">
+                            <span>No Data</span>
+                        </div>
+                        <div ng-show="weekDistance" class="graphwrapper" <span>{{(weekDistance/weeklyGoals.distance)*100 | number : 2}} % achieved</span>
+                            <canvas height="170" id="distancepie" class="chart chart-pie" chart-data="[cap(weekDistance, weeklyGoals.distance), cup(weeklyGoals.distance - weekDistance)]" chart-labels="pielabels.rotate(weeklyGoalsStartDay)"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2>{{headings.headingSpeedMeasure}} </h2></div>
+                    <div class="panel-body">
+                        <div ng-hide="sumStepsWeek" class="nodata">
+                            <span>No Data</span>
+                        </div>
+                        <div ng-show="sumStepsWeek" my-shower="showme" class="graphwrapper">
+                            <span>{{(maxPaceWeek/weeklyGoals.speed)*100 | number : 2}} % achieved</span>
+                            <canvas id="pacebar" class="chart chart-bar" chart-data="paceWeek" chart-labels="pacelabels"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2>{{headings.headingStepMeasure}}</h2></div>
+                    <div class="panel-body">
+                        <div ng-hide="maxPaceWeek" class="nodata">
+                            <span>No Data</span>
+                        </div>
+                        <div ng-show="maxPaceWeek" class="graphwrapper">
+                            <span>{{(sumStepsWeek/weeklyGoals.steps)*100 | number : 2}} % achieved</span>
+                            <canvas id="stepsbar" class="chart chart-bar" chart-data="stepsWeek" chart-labels="stepslabels"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel-right  col-sm-4">
+            <div class="achievementbox">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2>{{headings.headingsAchievements}}</h2>
+                    </div>
+                    <div class="panel-body">
+                        <h3>{{headings.headingDistanceArch}}</h3>
+                        <uib-progressbar max="reachedDistance + toNextDistance" value="totalDistance - reachedDistance">
+                            <span style="color:white; white-space:nowrap;">{{totalDistance}} / {{reachedDistance + toNextDistance}} km</span>
+                        </uib-progressbar>
+                        <h3>{{headings.headingStepsArch}}</h3>
+                        <uib-progressbar max="reachedSteps+ toNextSteps" value="totalSteps - reachedSteps">
+                            <span style="color:white; white-space:nowrap;">{{totalSteps}} / {{reachedSteps+ toNextSteps}} steps</span>
+                        </uib-progressbar>
+                    </div>
+                </div>
+            </div>
+            <div class="friendaddbox">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2>{{headings.headingFriending}}</h2>
+                    </div>
+                    <div class="panel-body">
+                        <input type="text" ng-model="selected" uib-typeahead="user as user.name for user in users | filter:{name:$viewValue} | limitTo:8" class="form-control" typeahead-on-select="onSelectFollowed($item, $model, $label)">
+                    </div>
+                </div>
+            </div>
+            <div class="friendsbox">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2>{{headings.headingFriendlist}}</h2>
+                    </div>
+                    <div class="list-group">
+                        <div ng-repeat="follower in followers" class="list-group-item friend-list-item">
+                            <div class="img-circle list-item-friend-image" user-image="follower.imageUrl"></div>
+                            {{follower.name}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

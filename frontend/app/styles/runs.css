@@ -1,0 +1,102 @@
+/*************************** Runs ***************************/
+
+.run-select-button {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    width: 68px;
+}
+
+.run-publish-button {
+    width: 100%;
+    height: 70px;
+    font-size: 30px;
+    color: #337ab7;
+}
+
+.run-interaction-button {
+    width: 100%;
+    height: 70px;
+    font-size: 30px;
+    line-height: 70px;
+    color: #337ab7;
+}
+
+.run-metric {
+    margin-left: 15px;
+    float: left;
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    padding-right: 15px;
+}
+
+.run-select-button-distance {
+    position: absolute;
+    right: 15px;
+    top: 0;
+    line-height: 70px;
+}
+
+.page-container>.row {
+    padding: 15px 0px;
+}
+
+.page-container {
+    background: #fff;
+}
+
+.run-graph h2 {
+    color: #337ab7;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#runMap {
+    height: 400px;
+}
+
+.drop-box {
+    position: relative;
+    z-index: 1000;
+}
+
+.drop-box-overlay {
+    position: absolute;
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(55, 143, 218, 0.25);
+    z-index: 900;
+}
+
+.drop-box.dragover .drop-box-overlay {
+    display: block;
+}
+
+.drop-box-overlay-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -75px;
+    margin-left: -75px;
+    text-align: center;
+    vertical-align: middle;
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 50%;
+    color: #337ab7;
+}
+
+.drop-box-overlay-icon>.glyphicon {
+    margin-top: 40px;
+    font-size: 40px;
+}
+
+.drop-box-overlay-icon>p {
+    font-weight: bold;
+}
